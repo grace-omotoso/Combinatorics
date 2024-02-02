@@ -5,8 +5,11 @@ def factorial(n):
         product *= i
     return product
 
+def permutation(n, r):
+    return factorial(n)//factorial(n-r)
+
 def main():
-    print(factorial(5))
+    print(permutation(5,2))
 
 main()
     
