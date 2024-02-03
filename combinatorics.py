@@ -8,8 +8,11 @@ def factorial(n):
 def permutation(n, r):
     return factorial(n)//factorial(n-r)
 
+def combination (n, r):
+    return factorial(n)//((factorial(n-r)*factorial(r)))
+
 def main():
-    print(permutation(5,2))
+    print(combination(52,5))
 
 main()
     
